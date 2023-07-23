@@ -1,0 +1,27 @@
+.switch[data-part="root"] {
+  display: inline-flex;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  width: var(--switch-track-width);
+  height: var(--switch-track-height);
+  background-color: var(--switch-track-color);
+  border-radius: var(--switch-track-corner-radius);
+}
+
+.switch[data-part="thumb"] {
+  width: var(--switch-track-height);
+  height: var(--switch-track-height);
+  background-color: var(--switch-thumb-color);
+  border-radius: var(--switch-thumb-corner-radius);
+  border: var(--switch-thumb-stroke-width) solid
+    var(--switch-thumb-stroke-color);
+  transition: all 0.2s ease-in-out;
+  transform: var(--switch-thumb-transform);
+}
+
+.switch[data-state="checked"] {
+  --switch-thumb-transform: translateX(
+    calc(var(--switch-track-width) - var(--switch-track-height))
+  );
+}

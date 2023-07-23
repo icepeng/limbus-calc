@@ -1,0 +1,75 @@
+.alert-dialog[data-part="overlay"] {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.alert-dialog[data-part="overlay"][data-state="open"] {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-opacity: 0;
+}
+
+.alert-dialog[data-part="overlay"][data-state="closed"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+  --tw-exit-opacity: 0;
+}
+
+.alert-dialog[data-part="content"] {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 50;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.2s;
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--alert-dialog-gap);
+  max-width: var(--alert-dialog-max-width);
+  padding: var(--alert-dialog-padding);
+  background-color: var(--alert-dialog-color);
+  border-radius: var(--alert-dialog-corner-radius);
+  border: 1px solid var(--alert-dialog-stroke-color);
+}
+
+.alert-dialog[data-part="content"][data-state="open"] {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-translate-x: -50%;
+  --tw-enter-translate-y: -48%;
+  --tw-enter-opacity: 0;
+  --tw-enter-scale: 0.95;
+}
+
+.alert-dialog[data-part="content"][data-state="closed"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+  --tw-exit-translate-x: -50%;
+  --tw-exit-translate-y: -48%;
+  --tw-exit-opacity: 0;
+  --tw-exit-scale: 0.95;
+}
+
+.alert-dialog[data-part="footer"] {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--alert-dialog-actions-gap);
+}
+
+/*
+grid
+gap-4
+shadow-lg
+data-[state=closed]:animate-out
+data-[state=closed]:fade-out-0
+data-[state=closed]:zoom-out-95
+data-[state=closed]:slide-out-to-left-1/2
+data-[state=closed]:slide-out-to-top-[48%]
+sm:rounded-lg
+md:w-full
+*/

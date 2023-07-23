@@ -1,0 +1,280 @@
+.button[data-recipe] {
+    --button-color: var(--color-bg-neutral)
+}
+.button:disabled[data-recipe] {
+    --button-color: var(--color-bg-disabled)
+}
+.button:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --button-color: var(--color-bg-neutral-hover)
+}
+.button:active:not(:disabled)[data-recipe] {
+    --button-color: var(--color-bg-neutral-pressed)
+}
+.button[data-recipe] {
+    --button-corner-radius: var(--radii-medium);
+    --button-gap: var(--spacing-small);
+    --button-height: var(--uniform-height-medium);
+    --button-icon-size: var(--icon-size-medium);
+    --button-padding-x: var(--spacing-medium);
+    --button-text-color: var(--color-fg-on-neutral)
+}
+.button:disabled[data-recipe] {
+    --button-text-color: var(--color-fg-disabled)
+}
+.button[data-size="large"][data-recipe] {
+    --button-corner-radius: var(--radii-medium);
+    --button-gap: var(--spacing-small);
+    --button-height: var(--uniform-height-large);
+    --button-padding-x: var(--spacing-large)
+}
+.button[data-size="small"][data-recipe] {
+    --button-corner-radius: var(--radii-medium);
+    --button-gap: var(--spacing-small);
+    --button-height: var(--uniform-height-small);
+    --button-padding-x: var(--spacing-small)
+}
+.button[data-variant="primary"][data-recipe] {
+    --button-color: var(--color-bg-brand)
+}
+.button[data-variant="primary"]:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --button-color: var(--color-bg-brand-hover)
+}
+.button[data-variant="primary"]:active:not(:disabled)[data-recipe] {
+    --button-color: var(--color-bg-brand-pressed)
+}
+.button[data-variant="primary"][data-recipe] {
+    --button-text-color: var(--color-fg-on-brand)
+}
+.checkbox[data-state="checked"][data-recipe] {
+    --checkbox-control-color: var(--color-bg-neutral)
+}
+.checkbox[data-state="checked"]:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --checkbox-control-color: var(--color-bg-neutral-hover)
+}
+.checkbox[data-state="checked"]:active:not(:disabled)[data-recipe] {
+    --checkbox-control-color: var(--color-bg-neutral-pressed)
+}
+.checkbox[data-recipe] {
+    --checkbox-control-corner-radius: var(--radii-small);
+    --checkbox-control-size: 16px;
+    --checkbox-gap: var(--spacing-small);
+    --checkbox-height: var(--uniform-height-medium);
+    --checkbox-icon-color: var(--color-fg-on-neutral)
+}
+.checkbox:disabled[data-recipe] {
+    --checkbox-icon-color: var(--color-fg-disabled)
+}
+.checkbox[data-recipe] {
+    --checkbox-icon-size: 12px;
+    --checkbox-stroke-color: var(--color-stroke-control)
+}
+.checkbox:disabled[data-recipe] {
+    --checkbox-stroke-color: var(--color-stroke-disabled)
+}
+.checkbox:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --checkbox-stroke-color: var(--color-stroke-control-hover)
+}
+.checkbox:active:not(:disabled)[data-recipe] {
+    --checkbox-stroke-color: var(--color-stroke-control-pressed)
+}
+.checkbox[data-recipe] {
+    --checkbox-text-color: var(--color-fg-neutral-text)
+}
+.checkbox:disabled[data-recipe] {
+    --checkbox-text-color: var(--color-fg-disabled)
+}
+.checkbox:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --checkbox-text-color: var(--color-fg-neutral-text-hover)
+}
+.checkbox:active:not(:disabled)[data-recipe] {
+    --checkbox-text-color: var(--color-fg-neutral-text-pressed)
+}
+.checkbox[data-variant="primary"][data-state="checked"][data-recipe] {
+    --checkbox-control-color: var(--color-bg-brand)
+}
+.checkbox[data-variant="primary"][data-state="checked"]:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --checkbox-control-color: var(--color-bg-brand-hover)
+}
+.checkbox[data-variant="primary"][data-state="checked"]:active:not(:disabled)[data-recipe] {
+    --checkbox-control-color: var(--color-bg-brand-pressed)
+}
+.checkbox[data-variant="primary"][data-recipe] {
+    --checkbox-icon-color: var(--color-fg-on-brand)
+}
+.radio[data-state="checked"][data-recipe] {
+    --radio-color: var(--color-bg-neutral)
+}
+.radio[data-state="checked"]:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --radio-color: var(--color-bg-neutral-hover)
+}
+.radio[data-state="checked"]:active:not(:disabled)[data-recipe] {
+    --radio-color: var(--color-bg-neutral-pressed)
+}
+.radio[data-recipe] {
+    --radio-control-corner-radius: var(--radii-full);
+    --radio-control-size: 16px;
+    --radio-gap: var(--spacing-small);
+    --radio-height: var(--uniform-height-medium);
+    --radio-icon-color: var(--color-fg-on-neutral)
+}
+.radio:disabled[data-recipe] {
+    --radio-icon-color: var(--color-fg-disabled)
+}
+.radio[data-recipe] {
+    --radio-icon-size: 8px;
+    --radio-stroke-color: var(--color-stroke-control)
+}
+.radio:disabled[data-recipe] {
+    --radio-stroke-color: var(--color-stroke-disabled)
+}
+.radio:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --radio-stroke-color: var(--color-stroke-control-hover)
+}
+.radio:active:not(:disabled)[data-recipe] {
+    --radio-stroke-color: var(--color-stroke-control-pressed)
+}
+.radio[data-recipe] {
+    --radio-text-color: var(--color-fg-neutral-text)
+}
+.radio:disabled[data-recipe] {
+    --radio-text-color: var(--color-fg-disabled)
+}
+.radio:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --radio-text-color: var(--color-fg-neutral-text-hover)
+}
+.radio:active:not(:disabled)[data-recipe] {
+    --radio-text-color: var(--color-fg-neutral-text-pressed)
+}
+.radio[data-variant="primary"][data-state="checked"][data-recipe] {
+    --radio-color: var(--color-bg-brand)
+}
+.radio[data-variant="primary"][data-state="checked"]:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --radio-color: var(--color-bg-brand-hover)
+}
+.radio[data-variant="primary"][data-state="checked"]:active:not(:disabled)[data-recipe] {
+    --radio-color: var(--color-bg-brand-pressed)
+}
+.radio[data-variant="primary"][data-recipe] {
+    --radio-icon-color: var(--color-fg-on-brand)
+}
+.input[data-recipe] {
+    --input-color: var(--color-bg-layer-2)
+}
+.input:disabled[data-recipe] {
+    --input-color: var(--color-bg-disabled)
+}
+.input[data-recipe] {
+    --input-corner-radius: var(--radii-medium);
+    --input-height: var(--uniform-height-medium);
+    --input-min-width: 240px;
+    --input-padding-start: var(--spacing-medium);
+    --input-stroke-color: var(--color-stroke-field)
+}
+.input:disabled[data-recipe] {
+    --input-stroke-color: var(--color-stroke-disabled)
+}
+.input:hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --input-stroke-color: var(--color-stroke-field-hover)
+}
+.input[data-invalid]:not(:disabled)[data-recipe] {
+    --input-stroke-color: var(--color-stroke-critical)
+}
+.input[data-invalid]:not(:disabled):hover:not(:disabled):not(:active):not(:focus-visible)[data-recipe] {
+    --input-stroke-color: var(--color-stroke-critical-hover)
+}
+.input[data-invalid]:not(:disabled):active:not(:disabled)[data-recipe] {
+    --input-stroke-color: var(--color-stroke-critical-pressed)
+}
+.input:active:not(:disabled)[data-recipe] {
+    --input-stroke-color: var(--color-stroke-field-pressed)
+}
+.input[data-recipe] {
+    --input-text-color: var(--color-fg-neutral-text)
+}
+.input[data-style="underline"][data-recipe] {
+    --input-corner-radius: var(--radii-none);
+    --input-padding-start: 0px
+}
+.card[data-recipe] {
+    --card-color: var(--color-bg-layer-2);
+    --card-corner-radius: var(--radii-medium);
+    --card-gap: var(--spacing-medium);
+    --card-padding-x: var(--spacing-medium);
+    --card-padding-y: var(--spacing-medium);
+    --card-stroke-color: var(--color-stroke-decorative-1)
+}
+.accordion[data-recipe] {
+    --accordion-icon-size: var(--icon-size-medium);
+    --accordion-padding-y: var(--spacing-medium);
+    --accordion-stroke-color: var(--color-stroke-decorative-1)
+}
+.progress-bar[data-recipe] {
+    --progress-bar-fill-color: var(--color-bg-brand);
+    --progress-bar-height: 4px;
+    --progress-bar-track-color: var(--color-stroke-field);
+    --progress-bar-track-corner-radius: var(--radii-full)
+}
+.slider[data-recipe] {
+    --slider-height: var(--uniform-height-medium);
+    --slider-range-color: var(--color-bg-brand);
+    --slider-thumb-color: var(--color-bg-layer-2);
+    --slider-thumb-corner-radius: var(--radii-full);
+    --slider-thumb-size: 24px;
+    --slider-thumb-stroke-color: var(--color-stroke-brand);
+    --slider-track-color: var(--color-stroke-control);
+    --slider-track-corner-radius: var(--radii-full);
+    --slider-track-height: 4px
+}
+.switch[data-recipe] {
+    --switch-thumb-color: var(--color-bg-layer-2);
+    --switch-thumb-corner-radius: var(--radii-full);
+    --switch-thumb-stroke-color: var(--color-stroke-control)
+}
+.switch[data-state="checked"][data-recipe] {
+    --switch-thumb-stroke-color: var(--color-bg-brand)
+}
+.switch[data-recipe] {
+    --switch-thumb-stroke-width: 4px;
+    --switch-track-color: var(--color-gray-300)
+}
+.switch[data-state="checked"][data-recipe] {
+    --switch-track-color: var(--color-bg-brand)
+}
+.switch[data-recipe] {
+    --switch-track-corner-radius: var(--radii-full);
+    --switch-track-height: var(--uniform-height-medium);
+    --switch-track-width: 64px
+}
+.toast[data-recipe] {
+    --toast-color: var(--color-bg-layer-2);
+    --toast-corner-radius: var(--radii-large);
+    --toast-description-color: var(--color-fg-neutral-text-subtle);
+    --toast-max-width: 480px;
+    --toast-min-width: 360px;
+    --toast-padding-x: var(--spacing-large);
+    --toast-padding-y: var(--spacing-large);
+    --toast-stroke-color: var(--color-stroke-decorative-1);
+    --toast-title-color: var(--color-fg-neutral-text)
+}
+.toast[data-variant="destructive"][data-recipe] {
+    --toast-color: var(--color-bg-critical);
+    --toast-description-color: var(--color-fg-on-critical);
+    --toast-title-color: var(--color-fg-on-critical)
+}
+.alert-dialog[data-recipe] {
+    --alert-dialog-actions-gap: var(--spacing-small);
+    --alert-dialog-color: var(--color-bg-layer-2);
+    --alert-dialog-corner-radius: var(--radii-large);
+    --alert-dialog-gap: var(--spacing-medium);
+    --alert-dialog-max-width: 512px;
+    --alert-dialog-padding: var(--spacing-xxlarge);
+    --alert-dialog-stroke-color: var(--color-stroke-decorative-1)
+}
+.table[data-recipe] {
+    --table-body-row-height: 44px;
+    --table-body-text-color: var(--color-fg-neutral-text);
+    --table-cell-padding-x: var(--spacing-small);
+    --table-header-row-height: 32px;
+    --table-header-text-color: var(--color-fg-neutral-text-subtle);
+    --table-row-stroke-color: var(--color-stroke-decorative-1)
+}

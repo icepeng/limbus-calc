@@ -1,0 +1,27 @@
+.input {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  --input-border-width: 1px;
+
+  height: var(--input-height);
+  min-width: var(--input-min-width);
+  padding-left: var(--input-padding-start);
+  border-radius: var(--input-corner-radius);
+  background-color: var(--input-color);
+  color: var(--input-text-color);
+  border: var(--input-border-width) solid var(--input-stroke-color);
+}
+
+.input:focus-visible {
+  outline: none;
+  --input-stroke-color: var(--color-stroke-focusring);
+  --input-border-width: 2px;
+}
+
+/* TODO: remove this binding, move to generated values */
+.input[data-style="underline"] {
+  border: none;
+  border-bottom: var(--input-border-width) solid var(--input-stroke-color);
+}

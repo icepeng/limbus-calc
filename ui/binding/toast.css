@@ -1,0 +1,74 @@
+.toast[data-part="viewport"] {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  max-height: 100vh;
+  padding: 16px;
+}
+
+.toast[data-part="toast"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  max-width: var(--toast-max-width);
+  min-width: var(--toast-min-width);
+  background-color: var(--toast-color);
+  border-radius: var(--toast-corner-radius);
+  border: 1px solid var(--toast-stroke-color);
+  padding: var(--toast-padding-y) var(--toast-padding-x);
+  box-shadow: var(--shadow);
+
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+}
+
+.toast[data-part="toast"][data-swipe="cancel"] {
+  transform: translateX(0);
+}
+
+.toast[data-part="toast"][data-swipe="end"] {
+  transform: translateX(var(--radix-toast-swipe-end-x));
+}
+
+.toast[data-part="toast"][data-swipe="move"] {
+  transition: none;
+  transform: translateX(var(--radix-toast-swipe-move-x));
+}
+
+.toast[data-part="toast"][data-state="open"] {
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-translate-y: 100%;
+}
+
+.toast[data-part="toast"][data-state="closed"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+  --tw-fade-out-opacity: 0.8;
+  --tw-exit-translate-x: 100%;
+}
+
+.toast[data-part="toast"][data-swipe="end"] {
+  animation-name: exit;
+  animation-duration: 150ms;
+}
+
+.toast[data-part="title"] {
+  color: var(--toast-title-color);
+}
+
+.toast[data-part="description"] {
+  color: var(--toast-description-color);
+}
+
+.toast[data-part="close-button"] {
+  cursor: pointer;
+  color: var(--toast-title-color);
+}

@@ -1,0 +1,10 @@
+.card[data-part="root"] {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--card-gap);
+  padding: var(--card-padding-y) var(--card-padding-x);
+  border: 1px solid var(--card-stroke-color);
+  border-radius: var(--card-corner-radius);
+  background-color: var(--card-color);
+}

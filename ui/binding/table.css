@@ -1,0 +1,27 @@
+.table[data-part="root"] {
+  width: 100%;
+}
+
+.table[data-part="row"] {
+  border-bottom: 1px solid var(--table-row-stroke-color);
+}
+
+.table[data-part="head"] {
+  text-align: start;
+  vertical-align: middle;
+
+  height: var(--table-header-row-height);
+  color: var(--table-header-text-color);
+  padding-left: var(--table-cell-padding-x);
+  padding-right: var(--table-cell-padding-x);
+}
+
+.table[data-part="cell"] {
+  text-align: start;
+  vertical-align: middle;
+
+  height: var(--table-body-row-height);
+  color: var(--table-body-text-color);
+  padding-left: var(--table-cell-padding-x);
+  padding-right: var(--table-cell-padding-x);
+}

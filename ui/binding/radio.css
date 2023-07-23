@@ -1,0 +1,36 @@
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio[data-part="root"] {
+  display: flex;
+  align-items: center;
+
+  height: var(--radio-height);
+  gap: var(--radio-gap);
+}
+
+.radio[data-part="control"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radio-control-corner-radius);
+  border: 1px solid var(--radio-stroke-color);
+  background-color: var(--radio-color);
+  width: var(--radio-control-size);
+  height: var(--radio-control-size);
+}
+
+.radio[data-part="icon"] {
+  border-radius: 100%;
+
+  width: var(--radio-icon-size);
+  height: var(--radio-icon-size);
+  background-color: var(--radio-icon-color);
+}
+
+.radio[data-part="label"] {
+  color: var(--radio-text-color);
+}

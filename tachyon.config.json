@@ -1,0 +1,259 @@
+{
+  "outDir": "ui",
+  "collections": [
+    {
+      "name": "Color",
+      "modeSelectors": {
+        "light": ":root",
+        "dark": ":root[data-color-mode='dark']"
+      }
+    },
+    {
+      "name": "Layout",
+      "modeSelectors": ":root"
+    },
+    {
+      "name": "Recipe",
+      "modeSelectors": ":root"
+    }
+  ],
+  "tokens": [
+    {
+      "collection": "Color",
+      "prefix": "palette/",
+      "nameFormat": "{collection}-{name}",
+      "utilityClasses": []
+    },
+    {
+      "collection": "Color",
+      "prefix": "background/",
+      "nameFormat": "{collection}-bg-{name}",
+      "utilityClasses": [
+        {
+          "selectorFormat": ".bg-{name}",
+          "properties": ["background-color"]
+        }
+      ]
+    },
+    {
+      "collection": "Color",
+      "prefix": "foreground/",
+      "nameFormat": "{collection}-fg-{name}",
+      "utilityClasses": [
+        {
+          "selectorFormat": ".fg-{name}",
+          "properties": ["color"]
+        }
+      ]
+    },
+    {
+      "collection": "Color",
+      "prefix": "stroke/",
+      "nameFormat": "{collection}-stroke-{name}",
+      "utilityClasses": [
+        {
+          "selectorFormat": ".stroke-{name}",
+          "properties": ["border-color"]
+        }
+      ]
+    },
+    {
+      "collection": "Layout",
+      "prefix": "spacing/",
+      "nameFormat": "spacing-{name}",
+      "utilityClasses": [
+        {
+          "selectorFormat": ".p-{name}",
+          "properties": ["padding"]
+        },
+        {
+          "selectorFormat": ".m-{name}",
+          "properties": ["margin"]
+        },
+        {
+          "selectorFormat": ".pt-{name}",
+          "properties": ["padding-top"]
+        },
+        {
+          "selectorFormat": ".mt-{name}",
+          "properties": ["margin-top"]
+        },
+        {
+          "selectorFormat": ".pr-{name}",
+          "properties": ["padding-right"]
+        },
+        {
+          "selectorFormat": ".mr-{name}",
+          "properties": ["margin-right"]
+        },
+        {
+          "selectorFormat": ".pb-{name}",
+          "properties": ["padding-bottom"]
+        },
+        {
+          "selectorFormat": ".mb-{name}",
+          "properties": ["margin-bottom"]
+        },
+        {
+          "selectorFormat": ".pl-{name}",
+          "properties": ["padding-left"]
+        },
+        {
+          "selectorFormat": ".ml-{name}",
+          "properties": ["margin-left"]
+        },
+        {
+          "selectorFormat": ".px-{name}",
+          "properties": ["padding-left", "padding-right"]
+        },
+        {
+          "selectorFormat": ".mx-{name}",
+          "properties": ["margin-left", "margin-right"]
+        },
+        {
+          "selectorFormat": ".py-{name}",
+          "properties": ["padding-top", "padding-bottom"]
+        },
+        {
+          "selectorFormat": ".my-{name}",
+          "properties": ["margin-top", "margin-bottom"]
+        },
+        {
+          "selectorFormat": ".gap-{name}",
+          "properties": ["gap"]
+        }
+      ]
+    },
+    {
+      "collection": "Layout",
+      "prefix": "radii/",
+      "nameFormat": "radii-{name}",
+      "utilityClasses": [
+        {
+          "selectorFormat": ".rounded-{name}",
+          "properties": ["border-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-t-{name}",
+          "properties": ["border-top-left-radius", "border-top-right-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-r-{name}",
+          "properties": [
+            "border-top-right-radius",
+            "border-bottom-right-radius"
+          ]
+        },
+        {
+          "selectorFormat": ".rounded-b-{name}",
+          "properties": [
+            "border-bottom-left-radius",
+            "border-bottom-right-radius"
+          ]
+        },
+        {
+          "selectorFormat": ".rounded-l-{name}",
+          "properties": ["border-top-left-radius", "border-bottom-left-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-tl-{name}",
+          "properties": ["border-top-left-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-tr-{name}",
+          "properties": ["border-top-right-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-br-{name}",
+          "properties": ["border-bottom-right-radius"]
+        },
+        {
+          "selectorFormat": ".rounded-bl-{name}",
+          "properties": ["border-bottom-left-radius"]
+        }
+      ]
+    },
+    {
+      "collection": "Layout",
+      "prefix": "uniform-height/",
+      "nameFormat": "uniform-height-{name}",
+      "utilityClasses": []
+    },
+    {
+      "collection": "Layout",
+      "prefix": "icon-size/",
+      "nameFormat": "icon-size-{name}",
+      "utilityClasses": []
+    }
+  ],
+  "recipes": [
+    {
+      "collection": "Recipe",
+      "prefix": "button/",
+      "name": "button"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "checkbox/",
+      "name": "checkbox"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "radio/",
+      "name": "radio"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "input/",
+      "name": "input"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "card/",
+      "name": "card"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "accordion/",
+      "name": "accordion"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "progress-bar/",
+      "name": "progress-bar"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "slider/",
+      "name": "slider"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "switch/",
+      "name": "switch"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "toast/",
+      "name": "toast"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "alert-dialog/",
+      "name": "alert-dialog"
+    },
+    {
+      "collection": "Recipe",
+      "prefix": "table/",
+      "name": "table"
+    }
+  ],
+  "conditions": {
+    "hover": ":hover:not(:disabled):not(:active):not(:focus-visible)",
+    "focus": ":focus-visible",
+    "pressed": ":active:not(:disabled)",
+    "disabled": ":disabled",
+    "selected": "[data-state=\"checked\"]",
+    "invalid": "[data-invalid]:not(:disabled)"
+  }
+}
